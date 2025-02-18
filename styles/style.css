@@ -1,3 +1,13 @@
+:root {
+  --primary-color: #e15334;
+  --secondary-color: #f1efe9;
+}
+
+body {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
+
 h1 {
   font-family: "Pridi", serif;
   font-weight: 600;

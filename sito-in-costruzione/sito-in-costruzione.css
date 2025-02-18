@@ -1,0 +1,11 @@
+body {
+  background: #000;
+}
+.container {
+  padding: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}

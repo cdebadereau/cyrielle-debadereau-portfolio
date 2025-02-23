@@ -70,7 +70,8 @@ header .hero .button:hover {
   border-radius: 10px;
 }
 
-.projects-section {
+.projects-section .container {
+  max-width: 1600px;
   margin-top: 60px;
 }
 
@@ -94,9 +95,68 @@ header .hero .button:hover {
   right: -160px;
 }
 
-.projects img {
+.project {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.project img {
   border: 2px solid var(--primary-color);
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.project .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+  border-radius: 10px;
+  padding: 35px;
+}
+
+.project.hover img {
+  opacity: 0;
+}
+
+.project.hover .overlay {
+  opacity: 1;
+}
+
+.project .project-description {
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+.project .project-button {
+  background: var(--third-color);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid var(--third-color);
+}
+.project .project-button:hover {
+  background: var(--primary-color);
+  color: var(--third-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid var(--third-color);
 }
 
 @media (max-width: 960px) {

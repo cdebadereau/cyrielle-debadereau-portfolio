@@ -75,7 +75,7 @@ header .hero .button:hover {
   margin-top: 60px;
 }
 
-.projects-section h3 {
+h3 {
   text-align: right;
   margin-right: 160px;
   margin-bottom: 60px;
@@ -84,7 +84,7 @@ header .hero .button:hover {
   padding-top: 15px;
 }
 
-.projects-section h3::before {
+h3::before {
   content: "";
   display: block;
   width: 700px;

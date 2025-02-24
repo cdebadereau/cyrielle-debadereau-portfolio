@@ -9,6 +9,9 @@
 body {
   color: var(--primary-color);
   background: var(--secondary-color);
+  font-family: var(--default-font);
+  font-weight: 400;
+  font-style: normal;
 }
 
 header .hero {
@@ -44,12 +47,6 @@ h2 {
   margin-bottom: 30px;
 }
 
-p {
-  font-family: var(--default-font);
-  font-weight: 400;
-  font-style: normal;
-}
-
 header .hero .button {
   background: var(--third-color);
   color: #fff;
@@ -58,7 +55,6 @@ header .hero .button {
   border: 2px solid var(--third-color);
   font-size: 18px;
   transition: all 250ms ease-in-out;
-  font-family: var(--default-font);
   margin: 5px;
 }
 
@@ -158,6 +154,10 @@ h3::before {
   border-radius: 10px;
   border: 2px solid var(--third-color);
 }
+.about-section ul {
+  border-left: 2px solid var(--primary-color);
+  padding-left: 40px;
+}
 
 @media (max-width: 960px) {
   header .hero {
@@ -186,5 +186,11 @@ h3::before {
     max-width: 200px;
     display: block;
     margin: 0 auto 20px;
+  }
+
+  .project {
+    margin-bottom: 0 auto 20px;
+    width: 300px;
+    height: 200px;
   }
 }

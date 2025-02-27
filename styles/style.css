@@ -14,15 +14,15 @@ body {
   font-style: normal;
 }
 
-header .hero {
-  padding: 260px 160px 155px;
-}
-
 h1,
 h2,
 h3,
 h4 {
   font-family: var(--heading-font);
+}
+
+header .hero {
+  padding: 260px 160px 155px;
 }
 
 header .hero h1 {
@@ -66,6 +66,10 @@ header .hero .button:hover {
   border-radius: 10px;
 }
 
+section {
+  margin-bottom: 80px;
+}
+
 .projects-section .container {
   max-width: 1600px;
   margin-top: 60px;
@@ -89,6 +93,10 @@ h3::before {
   position: absolute;
   top: 0;
   right: -160px;
+}
+
+.projects-section .projects-intro {
+  padding: 0 80px;
 }
 
 .project {
@@ -154,6 +162,7 @@ h3::before {
   border-radius: 10px;
   border: 2px solid var(--third-color);
 }
+
 .about-section ul {
   border-left: 2px solid var(--primary-color);
   padding-left: 40px;
@@ -179,6 +188,23 @@ h3::before {
 .skills-section .skills-keywords {
   font-size: 18px;
   text-align: center;
+}
+
+.skills-section .studies {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.skills-section .studies li {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-section .studies-dates,
+.skills-section .studies-titles {
+  border-right: 2px solid var(--primary-color);
+  padding-right: 40px;
 }
 
 @media (max-width: 960px) {

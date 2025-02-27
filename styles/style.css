@@ -159,6 +159,28 @@ h3::before {
   padding-left: 40px;
 }
 
+.skills-section .skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skills-section .skills-list li {
+  padding: 10px;
+}
+
+.skills-section .skills-list i {
+  font-size: 40px;
+}
+
+.skills-section .skills-keywords {
+  font-size: 18px;
+  text-align: center;
+}
+
 @media (max-width: 960px) {
   header .hero {
     padding: 160px 80px 150px;

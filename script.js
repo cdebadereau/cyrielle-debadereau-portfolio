@@ -6,3 +6,16 @@ document.querySelectorAll(".project").forEach((project) => {
     project.classList.remove("hover");
   });
 });
+
+// Footer Copy Button
+function copyEmail() {
+  const emailAddress = document.getElementById("email-address").innerHTML;
+  navigator.clipboard
+    .writeText(emailAddress)
+    .then(() => {
+      alert("Email copiato!");
+    })
+    .catch((err) => {
+      console.error("Errore", err);
+    });
+}

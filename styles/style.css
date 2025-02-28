@@ -232,8 +232,14 @@ h3::before {
   transform: scale(1.1);
 }
 
+/* ------------ footer ------------ */
+
 footer {
   text-align: center;
+}
+
+footer h4 {
+  font-size: 30px;
 }
 footer ul {
   padding: 0;
@@ -243,6 +249,17 @@ footer .social-icons li {
 }
 footer .social-icons i {
   font-size: 35px;
+  padding: 13px;
+  transition: all 250ms ease-in-out;
+  border-radius: 50%;
+  color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+footer .social-icons i:hover {
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  padding: 13px;
 }
 
 footer .contact-section {
@@ -253,8 +270,20 @@ footer .contact-section {
 }
 
 footer .email-address {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
+}
+footer .email-address a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+footer .copy-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--primary-color);
 }
 
 @media (max-width: 960px) {

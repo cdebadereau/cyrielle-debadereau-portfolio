@@ -38,6 +38,31 @@
       </div>
     </header>
 
+    <section class="about-section">
+      <h3>Chi sono</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <ul class="fs-5">
+              <li>Francese, vivo a Firenze</li>
+              <li>Parlo francese, italiano, inglese e spagnolo</li>
+              <li>Attualmente traduttrice ed editor nel settore ecommerce</li>
+            </ul>
+          </div>
+          <div class="col-md-7">
+            <p class="ps-5 pe-5">
+              Dopo aver lavorato come editor e traduttrice in ambito ecommerce,
+              ho deciso di seguire la mia passione per il web e specializzarmi
+              nello sviluppo front-end. Oggi, con competenze in
+              <span class="fw-bolder">HTML, CSS, JavaScript e React</span>, sono
+              pronta a unire il mio background comunicativo alla creazione di
+              esperienze digitali intuitive.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="projects-section">
       <h3>Progetti</h3>
       <div class="container">
@@ -51,6 +76,94 @@
           funzionali e creative.
         </p>
         <div class="projects">
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <div class="project">
+                <img
+                  src="images/portfolio-cyrielle.png"
+                  alt="Portfolio di Cyrielle"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <h4>Portfolio web responsive</h4>
+                  <p class="project-description">
+                    Sito personale creato per presentare i miei progetti di
+                    sviluppo. Realizzato completamente da zero con HTML, CSS,
+                    JavaScript e Bootstrap, offre un'interfaccia moderna, pulita
+                    e responsive, perfettamente adattabile a tutti i dispositivi
+                    (desktop, tablet, mobile).
+                  </p>
+
+                  <a
+                    href="https://github.com/cdebadereau/cyrielle-debadereau-portfolio"
+                    class="btn button project-button mt-3 mb-2"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                  <a href="/" class="btn button project-button" target="_blank"
+                    >Vedere progetto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project">
+                <img
+                  src="images/expop.png"
+                  alt="Portfolio di Cyrielle"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <h4>Expop</h4>
+                  <p class="project-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur tempor luctus dapibus. Suspendisse potenti. Nulla
+                    a finibus orci. Suspendisse rutrum, sem ut sodales commodo,
+                    odio lacus molestie risus, et iaculis urna ante in sem.
+                    Linguaggi
+                  </p>
+
+                  <a
+                    href="https://github.com/cdebadereau/expop"
+                    class="btn button project-button mt-3 mb-2"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                  <a href="/" class="btn button project-button" target="_blank"
+                    >Vedere progetto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project">
+                <img
+                  src="images/applicazione-meteo-react.png"
+                  alt="Portfolio di Cyrielle"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <h4>Applicazione Meteo</h4>
+                  <p class="project-description">
+                    Applicazione sviluppata per visualizzare le condizioni
+                    atmosferiche in tempo reale. Realizzata completamente da
+                    zero con HTML, CSS, Bootstrap e React, con l'utilizzo di
+                    un'API per ottenere dati aggiornati sulle previsioni meteo.
+                  </p>
+
+                  <a
+                    href="https://github.com/cdebadereau/react-weather-appli"
+                    class="btn button project-button mt-3 mb-2"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                  <a href="/" class="btn button project-button" target="_blank"
+                    >Vedere progetto</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="col-md-4">
               <div class="project">
@@ -142,30 +255,7 @@
         </div>
       </div>
     </section>
-    <section class="about-section">
-      <h3>Chi sono</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <ul class="fs-5">
-              <li>Francese, vivo a Firenze</li>
-              <li>Parlo francese, italiano, inglese e spagnolo</li>
-              <li>Attualmente traduttrice ed editor nel settore ecommerce</li>
-            </ul>
-          </div>
-          <div class="col-md-7">
-            <p class="ps-5 pe-5">
-              Dopo aver lavorato come editor e traduttrice in ambito ecommerce,
-              ho deciso di seguire la mia passione per il web e specializzarmi
-              nello sviluppo front-end. Oggi, con competenze in
-              <span class="fw-bolder">HTML, CSS, JavaScript e React</span>, sono
-              pronta a unire il mio background comunicativo alla creazione di
-              esperienze digitali intuitive.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <section class="skills-section">
       <h3>Competenze</h3>
       <div class="container">
@@ -272,15 +362,30 @@
           <p>
             Hai domande o necessiti ulteriori informazioni?
             <br />
-            Non esitare a contattarmi via email:<br />
-            <span class="email-address">cyrielle.debadereau@gmail.com</span>
+            Non esitare a contattarmi via email:
+          </p>
+          <p class="email-address">
+            <a href="mailto:cyrielle.debadereau@gmail.com" id="email-address"
+              >cyrielle.debadereau@gmail.com</a
+            ><button class="copy-button ms-1" onClick="copyEmail()">
+              <i class="fa-regular fa-copy"></i>
+            </button>
           </p>
         </div>
         <div class="socials">
-          <p>Mi puoi anche ritrovare qui:</p>
-          <ul class="social-icons d-flex justify-content-center">
-            <li><i class="fa-brands fa-square-github me-2"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
+          <ul class="social-icons d-flex justify-content-between">
+            <li>
+              <a href="https://github.com/cdebadereau" target="_blank"
+                ><i class="fa-brands fa-square-github me-2"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/cyrielle-debadereau/?locale=it_IT"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
           </ul>
         </div>
       </div>

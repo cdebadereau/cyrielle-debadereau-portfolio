@@ -17,7 +17,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: var(--heading-font);
 }
 
@@ -215,6 +216,11 @@ h3::before {
   padding-right: 40px;
 }
 
+.skills-section .shecodes-certification {
+  margin: 20px 10px;
+  text-align: center;
+}
+
 footer {
   text-align: center;
 }
@@ -225,7 +231,7 @@ footer .social-icons li {
   list-style: none;
 }
 footer .social-icons i {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 footer .contact-section {

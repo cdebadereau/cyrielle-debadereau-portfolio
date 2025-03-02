@@ -42,7 +42,7 @@ header .hero .surname {
 }
 
 h2 {
-  font-size: 27px;
+  font-size: 34px;
   font-weight: 200;
   font-style: normal;
   margin-bottom: 30px;
@@ -72,7 +72,7 @@ section {
 }
 
 .projects-section .container {
-  max-width: 1600px;
+  max-width: 1100px;
   margin-top: 60px;
 }
 
@@ -108,7 +108,6 @@ h3::before {
 }
 
 .project img {
-  /*border: 2px solid var(--primary-color);*/
   border-radius: 10px;
   width: 100%;
   height: 100%;
@@ -164,9 +163,20 @@ h3::before {
   border: 2px solid var(--third-color);
 }
 
+.about-section img {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.about-section .about-intro {
+  margin: 30px;
+}
+
 .about-section ul {
   border-left: 2px solid var(--primary-color);
   padding-left: 40px;
+  margin-left: 55px;
+  margin-top: 50px;
 }
 
 .skills-section .tools {
@@ -216,19 +226,19 @@ h3::before {
   padding-right: 40px;
 }
 
-.skills-section .shecodes-certification {
+.certifications .shecodes-certification {
   margin: 20px 15px;
   text-align: center;
 }
 
-.skills-section .shecodes-certification img {
+.certifications .shecodes-certification img {
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   margin-top: 10px;
   transition: transform 0.3s ease-in-out;
 }
 
-.skills-section .shecodes-certification img:hover {
+.certifications .shecodes-certification img:hover {
   transform: scale(1.1);
 }
 

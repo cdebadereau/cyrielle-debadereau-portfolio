@@ -79,10 +79,11 @@
       </div>
     </header>
 
-    <section class="projects-section" id="projects">
-      <h3>Progetti</h3>
-      <div class="container">
-        <p class="projects-intro text-center mb-5">
+    <div class="container">
+      <section class="projects-section" id="projects">
+        <h3>Progetti</h3>
+
+        <p class="projects-intro text-center">
           Ho creato questi progetti personali per mettere in pratica le
           competenze che ho acquisito durante il mio percorso di studi e per
           esplorare ulteriormente il mondo dello sviluppo front-end. Pur non
@@ -269,44 +270,11 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="about-section" id="about">
-      <h3>Chi sono</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <img
-              src="images/cyrielle-debadereau.jpg"
-              alt="Cyrielle de Badereau de Saint Martin"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-md-7">
-            <p class="ps-5 pe-5 about-intro">
-              Ciao, sono <span class="fw-bolder">Cyrielle</span>.<br />Dopo aver
-              lavorato come editor e traduttrice in ambito ecommerce, ho deciso
-              di seguire la mia passione per il web e specializzarmi nello
-              sviluppo front-end. Oggi, con competenze in
-              <span class="fw-bolder">HTML, CSS, JavaScript e React</span>, sono
-              pronta a unire il mio background comunicativo alla creazione di
-              esperienze digitali intuitive.
-            </p>
-            <ul class="fs-5">
-              <li>Francese, vivo a Firenze</li>
-              <li>Parlo francese, italiano, inglese e spagnolo</li>
-              <li>Attualmente traduttrice ed editor nel settore ecommerce</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills-section" id="skills">
-      <h3>Competenze</h3>
-      <div class="container">
-        <div class="tools mb-5">
+      <section class="skills-section" id="skills">
+        <h3>Competenze</h3>
+        <div class="tools mb-4">
           <ul class="skills-list">
             <li><i class="fa-brands fa-html5"></i></li>
             <li><i class="fa-brands fa-css3-alt"></i></li>
@@ -315,19 +283,39 @@
             <li><i class="fa-brands fa-react"></i></li>
             <li><i class="fa-brands fa-square-github"></i></li>
           </ul>
-          <p class="skills-keywords">
-            HTML5, CSS3, JavaScript, Bootstrap, React, API,
-            <br />Responsive Design, VS Code, GitHub, Git, Hosting, SEO
-          </p>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="skills">
+              <h4 class="text-center mb-4">Tool</h4>
+              <ul>
+                <li>VS Code</li>
+                <li>MacOS</li>
+                <li>GitHub</li>
+                <li>Git</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skills">
+              <h4 class="text-center mb-4">Tecnologie</h4>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>React</li>
+                <li>API</li>
+                <li>Responsive Design</li>
+                <li>Hosting</li>
+                <li>SEO on-page</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <ul class="studies">
-          <div class="studies-dates">
-            <li>2021 - 2022</li>
-            <li>2015 - 2017</li>
-            <li>2013 - 2014</li>
-            <li>2011 - 2013</li>
-          </div>
           <div class="studies-titles">
             <li>Diploma in Frontend Development</li>
             <li>
@@ -345,17 +333,14 @@
           </div>
           <div class="institutes-names">
             <li>SheCodes</li>
-            <li>Università di Franche-Comté, FR</li>
-            <li>Università degli Studi di Trento, IT</li>
-            <li>Università di Caen, FR</li>
+            <li>Montbéliard, FR</li>
+            <li>Trento, IT</li>
+            <li>Caen, FR</li>
           </div>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <section class="certifications">
-      <h3>Certificazioni</h3>
-      <div class="container">
+      <section class="certifications">
         <div class="certifications d-flex">
           <div class="shecodes-certification">
             <h4>SheCodes Basics</h4>
@@ -404,9 +389,40 @@
             /></a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <section class="about-section" id="about">
+        <h3>Chi sono</h3>
+
+        <div class="row">
+          <div class="col-md-5">
+            <img
+              src="images/cyrielle-debadereau.jpg"
+              alt="Cyrielle de Badereau de Saint Martin"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-7">
+            <p class="ps-5 pe-5 about-intro">
+              Ciao, sono <span class="fw-bolder">Cyrielle</span>.<br />Dopo aver
+              lavorato come
+              <span class="fw-bolder"
+                >editor e traduttrice in ambito ecommerce</span
+              >, ho deciso di seguire la mia passione per il web e
+              specializzarmi nello sviluppo front-end. Oggi, con competenze in
+              HTML, CSS, JavaScript e React, sono pronta a unire il mio
+              background comunicativo alla creazione di esperienze digitali
+              intuitive.
+            </p>
+            <ul class="fs-5">
+              <li>Francese, vivo a Firenze</li>
+              <li>Parlo francese, italiano, inglese e spagnolo</li>
+              <li>Ho vissuto in 5 regioni italiane in questi ultimi 10 anni</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
     <hr />
     <footer class="container pt-4 pb-5" id="contact">
       <h4>Contatto</h4>

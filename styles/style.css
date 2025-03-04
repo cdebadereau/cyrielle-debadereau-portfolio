@@ -12,6 +12,7 @@ body {
   font-family: var(--default-font);
   font-weight: 400;
   font-style: normal;
+  font-size: 17px;
 }
 
 h1,
@@ -24,7 +25,7 @@ h5 {
 
 .custom-navbar {
   background: var(--secondary-color) !important;
-  padding: 20px 20px;
+  padding: 30px 160px;
 }
 
 .custom-navbar a {
@@ -34,7 +35,7 @@ h5 {
 }
 
 header .hero {
-  padding: 260px 160px 200px;
+  padding: 260px 160px 300px;
 }
 
 header .hero h1 {
@@ -78,37 +79,37 @@ header .hero .button:hover {
   border-radius: 10px;
 }
 
-section {
-  margin-bottom: 80px;
+.container {
+  max-width: 1100px;
 }
 
-.projects-section .container {
-  max-width: 1100px;
-  margin-top: 60px;
+section {
+  margin-bottom: 80px;
+  scroll-margin-top: 120px;
 }
 
 h3 {
   text-align: right;
-  margin-right: 160px;
-  margin-bottom: 60px;
   font-size: 40px;
   position: relative;
   padding-top: 15px;
+  margin-bottom: 60px;
 }
 
 h3::before {
   content: "";
   display: block;
-  width: 700px;
+  width: 500px;
   height: 2px;
   background-color: var(--primary-color);
   position: absolute;
   top: 0;
-  right: -160px;
+  right: 0;
 }
 
 .projects-section .projects-intro {
-  padding: 0 80px;
+  margin-bottom: 60px;
+  line-height: 1.8;
 }
 
 .project {
@@ -191,10 +192,7 @@ h3::before {
 }
 
 .skills-section .tools {
-  border: 2px solid var(--primary-color);
-  border-radius: 10px;
   padding: 20px;
-  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -212,18 +210,27 @@ h3::before {
 }
 
 .skills-section .skills-list i {
-  font-size: 40px;
+  font-size: 50px;
 }
 
-.skills-section .skills-keywords {
-  font-size: 18px;
-  text-align: center;
+.skills-section .skills {
+  padding: 30px 20px;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  margin: 0 15px 60px;
+  height: 350px;
+}
+
+.skills-section .skills ul {
+  list-style: none;
+  padding: 30px auto 30px 80px;
 }
 
 .skills-section .studies {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
+  line-height: 2.5;
 }
 
 .skills-section .studies li {
@@ -231,10 +238,9 @@ h3::before {
   padding: 0;
 }
 
-.skills-section .studies-dates,
 .skills-section .studies-titles {
   border-right: 2px solid var(--primary-color);
-  padding-right: 40px;
+  padding-right: 20px;
 }
 
 .certifications .shecodes-certification {
@@ -305,6 +311,10 @@ footer .copy-button {
 }
 
 @media (max-width: 960px) {
+  .custom-navbar {
+    padding: 10px;
+  }
+
   header .hero {
     padding: 160px 80px 150px;
     text-align: center;

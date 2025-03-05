@@ -191,39 +191,33 @@ h3::before {
   margin-top: 50px;
 }
 
-.skills-section .tools {
+/* Skills section */
+
+.skills-section .skills {
+  margin: auto;
+}
+
+.skills-section .skill-info {
   padding: 20px;
   margin: 0 auto;
 }
 
-.skills-section .skills-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.skills-section .skills-list li {
-  padding: 10px;
-}
-
-.skills-section .skills-list i {
-  font-size: 50px;
-}
-
-.skills-section .skills {
+.skills-section .skill {
   padding: 30px 20px;
   border: 2px solid var(--primary-color);
   border-radius: 10px;
   margin: 0 15px 60px;
-  height: 350px;
+  height: 400px;
+  width: 450px;
 }
 
-.skills-section .skills ul {
+.skills-section .skill ul {
   list-style: none;
-  padding: 30px auto 30px 80px;
+  padding: 0;
+}
+
+.skills-section .skill i {
+  font-size: 50px;
 }
 
 .skills-section .studies {

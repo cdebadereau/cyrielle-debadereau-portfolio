@@ -314,7 +314,12 @@ footer .copy-button {
 
 @media (max-width: 960px) {
   .custom-navbar {
+    text-align: center;
     padding: 10px;
+  }
+
+  .custom-navbar button {
+    margin-bottom: 15px;
   }
 
   header .hero {

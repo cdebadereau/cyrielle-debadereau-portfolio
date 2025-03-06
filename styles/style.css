@@ -182,6 +182,7 @@ h3::before {
 
 .about-section .about-intro {
   margin: 30px;
+  padding-left: 25px;
 }
 
 .about-section ul {
@@ -206,9 +207,10 @@ h3::before {
   padding: 30px 20px;
   border: 2px solid var(--primary-color);
   border-radius: 10px;
-  margin: 0 15px 60px;
-  height: 400px;
-  width: 450px;
+  margin: 0 auto 60px;
+  height: 80%;
+  width: 100%;
+  max-width: 400px;
 }
 
 .skills-section .skill ul {
@@ -237,7 +239,12 @@ h3::before {
   padding-right: 20px;
 }
 
-.certifications .shecodes-certification {
+.certifications {
+  display: flex;
+  margin-top: 80px;
+}
+
+.shecodes-certification {
   margin: 20px 15px;
   text-align: center;
 }
@@ -282,6 +289,7 @@ footer .social-icons i:hover {
 
 footer .contact-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 100px;
@@ -341,5 +349,24 @@ footer .copy-button {
     margin-bottom: 0 auto 20px;
     width: 300px;
     height: 200px;
+  }
+
+  .projects-intro {
+    padding: 0 20px;
+  }
+
+  .about-section .about-intro {
+    text-align: center;
+    padding: 0;
+    margin-top: 60px;
+  }
+
+  .certifications {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .contact-section {
+    gap: 10px;
   }
 }

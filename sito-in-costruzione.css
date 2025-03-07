@@ -2,7 +2,8 @@ body {
   background: #000;
 }
 .container {
-  padding: 400px;
+  max-width: 1200px;
+  margin: 400px auto;
 }
 
 h1 {

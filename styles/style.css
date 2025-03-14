@@ -170,6 +170,10 @@ h3::before {
   margin-top: 20px;
 }
 
+.project-description a {
+  color: var(--primary-color);
+}
+
 .project .project-button {
   background: var(--third-color);
   color: #fff;

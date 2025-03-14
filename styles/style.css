@@ -229,11 +229,6 @@ h3::before {
   padding: 0;
 }
 
-.skills-section .studies-titles {
-  border-right: 2px solid var(--primary-color);
-  padding-right: 20px;
-}
-
 .certifications {
   display: flex;
   margin-top: 80px;
@@ -331,6 +326,12 @@ footer small {
 }
 
 @media (max-width: 960px) {
+  body {
+    font-size: 14px;
+  }
+  .custom-navbar a:hover {
+    border: none;
+  }
   .custom-navbar {
     text-align: center;
     padding: 10px;
@@ -338,7 +339,6 @@ footer small {
 
   .custom-navbar button {
     margin-bottom: 15px;
-    border: 2px solid var(--primary-color);
   }
 
   header .hero {
@@ -369,14 +369,20 @@ footer small {
     margin: 0 auto 20px;
   }
 
+  h3::before {
+    width: 150px;
+  }
+
   .project {
-    margin-bottom: 0 auto 20px;
     width: 300px;
     height: 200px;
   }
 
   .projects-intro {
     padding: 0 20px;
+  }
+  .skills-section .skill {
+    max-width: 305px;
   }
 
   .about-section .about-intro {

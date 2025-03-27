@@ -174,7 +174,7 @@ h3::before {
   color: var(--primary-color);
 }
 
-.project .project-button {
+.projects .project-button {
   background: var(--third-color);
   color: #fff;
   padding: 10px 20px;
@@ -183,12 +183,16 @@ h3::before {
   font-size: 14px;
   transition: all 250ms ease-in-out;
 }
-.project .project-button:hover {
+.projects .project-button:hover {
   background: var(--secondary-color);
   color: var(--third-color);
   padding: 10px 20px;
   border-radius: 10px;
   border: 2px solid var(--third-color);
+}
+
+.projects .mobile-text {
+  display: none;
 }
 
 /* ---------- Skills section ----------- */
@@ -329,7 +333,7 @@ footer small {
   font-size: 12px;
 }
 
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
   body {
     font-size: 14px;
   }
@@ -385,6 +389,25 @@ footer small {
   .projects-intro {
     padding: 0 20px;
   }
+
+  .project .overlay {
+    display: none;
+  }
+
+  .projects .mobile-text {
+    display: block;
+    text-align: center;
+    padding: 0 40px;
+  }
+
+  .projects .mobile-text h4 {
+    margin-top: 20px;
+  }
+
+  .projects .mobile-text .project-description {
+    margin-bottom: 20px;
+  }
+
   .skills-section .skill {
     max-width: 305px;
   }

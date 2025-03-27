@@ -1,6 +1,8 @@
 body {
   background: #000;
+  max-height: 100vh;
 }
+
 .container {
   max-width: 1200px;
   margin: 400px auto;

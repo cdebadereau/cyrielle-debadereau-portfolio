@@ -236,6 +236,60 @@ h3::before {
   list-style: none;
   padding: 0;
 }
+.skills-section .timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.skills-section .timeline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 2px;
+  background-color: var(--primary-color);
+}
+
+.skills-section .timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.skills-section .timeline-item:nth-child(odd) {
+  left: 50%;
+  padding-left: 50px;
+}
+
+.skills-section .timeline-item:nth-child(even) {
+  left: 0;
+  padding-right: 50px;
+}
+
+.skills-section .timeline-dot {
+  position: absolute;
+  background: var(--primary-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 40%;
+  left: -9px;
+}
+
+.skills-section .timeline-dot.left-dot {
+  position: absolute;
+  left: 391px;
+}
+
+.skills-section .timeline-content {
+  position: relative;
+  border: 2px solid var(--primary-color);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
 
 .certifications {
   display: flex;

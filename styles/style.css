@@ -285,6 +285,7 @@ h3::before {
   padding: 20px 25px;
   border-radius: 10px;
   position: relative;
+  margin: 0 30px;
 }
 
 .certifications {
@@ -462,10 +463,16 @@ footer small {
     max-width: 305px;
   }
 
+  .about-section img {
+    display: block;
+    margin: 0 auto;
+    height: 80%;
+  }
+
   .about-section .about-intro {
     text-align: center;
     padding: 0;
-    margin-top: 60px;
+    margin: 0;
   }
 
   .certifications {

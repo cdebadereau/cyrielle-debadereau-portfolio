@@ -31,7 +31,7 @@ h5 {
 .custom-navbar a {
   color: var(--primary-color);
   margin: 0 25px;
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   border-top: 2px solid var(--secondary-color);
   padding-top: 10px;
@@ -225,67 +225,14 @@ h3::before {
   font-size: 50px;
 }
 
-.skills-section .studies {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  line-height: 2.5;
-}
-
 .skills-section .studies li {
   list-style: none;
   padding: 0;
+  line-height: 2.5;
+  text-align: center;
 }
-
-.timeline {
-  position: relative;
-  max-width: 900px;
-  margin: 60px auto;
-  display: grid;
-  grid-template-columns: 1fr 20px 1fr; /* gauche | ligne + dot | droite */
-  gap: 20px;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 100%;
-  background-color: var(--primary-color);
-  z-index: 0;
-}
-
-.timeline-item {
-  padding: 20px;
-}
-
-.timeline-item.left {
-  grid-column: 1 / 3;
-}
-
-.timeline-item.right {
-  grid-column: 2 / 4;
-}
-
-.timeline-dot {
-  grid-column: 2 / 3;
-  width: 20px;
-  height: 20px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  margin: auto;
-  z-index: 1;
-}
-
-.timeline-content {
-  border: 2px solid var(--primary-color);
-  padding: 20px 25px;
-  border-radius: 10px;
-  position: relative;
-  margin: 0 30px;
+.skills-section .studies {
+  padding: 0 40px;
 }
 
 .certifications {
@@ -482,5 +429,19 @@ footer small {
 
   footer .contact-section {
     gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1078px) and (min-width: 960px) {
+  .custom-navbar a {
+    margin: 0 15px;
+  }
+
+  .custom-navbar {
+    padding: 10px;
+  }
+
+  .certifications h4 {
+    font-size: 20px;
   }
 }

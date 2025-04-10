@@ -413,7 +413,7 @@ footer small {
   .about-section img {
     display: block;
     margin: 0 auto;
-    height: 80%;
+    margin-bottom: 40px;
   }
 
   .about-section .about-intro {
